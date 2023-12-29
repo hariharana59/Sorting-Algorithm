@@ -1,9 +1,11 @@
 # Selection sort and Insertion sort
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
+
 ## Equipment’s required:
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
+   
 ## Algorithm:
 ## Selection Sort Algorithm:
 1.	Set the first unsorted element as the minimum
@@ -17,27 +19,61 @@ To write a program to perform selection sort and insertion sort using python pro
 3.	If yes, move sorted element to the right by 1.
 4.	Break the loop and insert X.
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
+   
 ## Program:
 i)	#Selection Sort
 ```
-
-
-
-
-
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: Hariharan A
+RegisterNumber: 212223110013
+'''
+def selection_sort(nums):
+    for i in range(1,len(nums)):
+        insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=insert
+    print(nums)
+    
+    
+    
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
 ```
+
 ii)	#Insertion Sort
 ```
-
-
-
-
-
-
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: Hariharan A
+RegisterNumber: 212223110013
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=insert
+    print(nums)
+    
+    
+    
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
 ```
 
 ## Output:
+i)	#Selection Sort
+![image](https://github.com/hariharana59/Sorting-Algorithm/assets/144980130/eec930f1-d637-4d77-8b41-cf699ba857ad)
 
+
+ii)	#Insertion Sort
+![image](https://github.com/hariharana59/Sorting-Algorithm/assets/144980130/947efac9-d831-49a7-9e94-b59e1c3bdc9b)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
